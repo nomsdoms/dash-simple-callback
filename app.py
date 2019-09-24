@@ -7,17 +7,17 @@ from collections import deque, Counter
 
 ########### Define your variables ######
 
-myheading1='Try out a palindrome here!'
-initial_value='A nut for a jar of tuna'
+myheading1='Pig Latin Convertor'
+initial_value='Pig Latin is fun'
 longtext='''
         _Suggestions you might try:_
-        * A man, a plan, a canal: Panama!
-        * Go hang a salami I'm a lasanga hog
-        * God! Nate bit a Tibetan dog!
+        * Pig Latin is not fun
+        * Can I speak regular English
+        * What is Pig Latin
         '''
-tabtitle = 'racecar'
+tabtitle = 'Pig Latin'
 sourceurl = 'https://www.grammarly.com/blog/16-surprisingly-funny-palindromes/'
-githublink = 'https://github.com/austinlasseter/dash-simple-callback'
+githublink = 'https://github.com/nomsdoms/dash-simple-callback/'
 
 ########### Define a function for your callback:
 VOWELS = 'AaEeIiOoUuYy'
@@ -25,9 +25,9 @@ def my_function(sentence):
     pig_list = []
     for word in sentence.split():
         if word[0] in VOWELS:
-            pig_list.append(word + "way")
+            pig_list.append(word.lower() + "way")
         else:
-            pig_list.append(word[1:] + word[0] + "ay")
+            pig_list.append(word.lower()[1:] + word.lower()[0] + "ay")
     return " ".join(pig_list)
 
 ########### Initiate the app
