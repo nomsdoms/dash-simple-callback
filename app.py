@@ -8,7 +8,7 @@ from collections import deque, Counter
 ########### Define your variables ######
 
 myheading1='Pig Latin Convertor'
-initial_value='Iay ancay peaksay igpay atinlay'
+initial_value='I can speak Pig Latin'
 longtext='''
         _Suggestions you might try:_
         * Pig Latin is stupid
