@@ -7,21 +7,21 @@ from collections import deque, Counter
 
 ########### Define your variables ######
 
-myheading1='Try out a palindrome here!'
-initial_value='A nut for a jar of tuna'
+myheading1='Pig Latin Convertor'
+initial_value='Iay ancay peaksay igpay atinlay'
 longtext='''
         _Suggestions you might try:_
-        * A man, a plan, a canal: Panama!
-        * Go hang a salami I'm a lasanga hog
-        * God! Nate bit a Tibetan dog!
+        * Pig Latin is stupid
+        * What is Pig Latin
+        * I cannot understand pig latin
         '''
 tabtitle = 'racecar'
-sourceurl = 'https://www.grammarly.com/blog/16-surprisingly-funny-palindromes/'
-githublink = 'https://github.com/austinlasseter/dash-simple-callback'
+sourceurl = 'https://en.m.wikipedia.org/wiki/Pig_Latin'
+githublink = 'https://github.com/nomsdoms/dash-simple-callback/'
 
 ########### Define a function for your callback:
 def my_function(letters):
-    return(letters[::-1])
+    return(letters[1:len(letters)]+"ay")
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
