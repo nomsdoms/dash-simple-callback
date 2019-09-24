@@ -21,7 +21,9 @@ githublink = 'https://github.com/nomsdoms/dash-simple-callback/'
 
 ########### Define a function for your callback:
 def my_function(letters):
-    return(letters[1:len(letters)]+"ay")
+words = str(letters.split())
+    for word in words:
+        return (word[1:] + word[0] + "ay", end = " ")
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
