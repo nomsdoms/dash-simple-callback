@@ -22,7 +22,7 @@ githublink = 'https://github.com/nomsdoms/dash-simple-callback/'
 ########### Define a function for your callback:
 def my_function(letters):
 words = str(letters.split())
-    for word in words:
+for word in words:
         return (word[1:] + word[0] + "ay", end = " ")
 
 ########### Initiate the app
