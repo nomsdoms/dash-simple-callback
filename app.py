@@ -20,8 +20,15 @@ sourceurl = 'https://www.grammarly.com/blog/16-surprisingly-funny-palindromes/'
 githublink = 'https://github.com/austinlasseter/dash-simple-callback'
 
 ########### Define a function for your callback:
-def my_function(letters):
-    return(letters[::-1])
+VOWELS = 'AaEeIiOoUuYy'
+def my_function(sentence):
+    pig_list = []
+    for word in sentence.split():
+        if word[0] in VOWELS:
+            pig_list.append(word + "way")
+        else:
+            pig_list.append(word[1:] + word[0] + "ay")
+    return " ".join(pig_list)
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
